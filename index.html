@@ -12,19 +12,20 @@
   </head>
   <body>
     <header>
-        <button type="button" onclick="document.getElementById('hireDialog').showModal()">Hire me</button>
-
-        <dialog id="hireDialog">
-            <h2>Available for internships</h2>
-            <p>I am available for internships and freelance web projects from June 2027.</p>
-            <p><a href="#contact">Send me a message</a> or <a href="Files/Personal_CV.pdf"
-                download>download my CV</a>.</p>
-                <button type="button" onclick="document.getElementById('hireDialog').close()">Close</button>
-        </dialog>
     <h1>Abigiya Yonas</h1>
     <img src="img\profile.jpg"
     alt="potrait of Abigiya yonas" title="Abigiya yonas" width="200" height="250">
     <p>Software Engineering student and aspiring web developer.</p>
+    <button type="button" onclick="document.getElementById('hireDialog').showModal()">Hire me</button>
+        <dialog id="hireDialog">
+            <h2>Available for internships</h2>
+            <p>I am available for internships and 
+                freelance web projects from June 2027.</p>
+            <p><a href="#contact">Send me a message</a> or <a href="Files/Personal_CV.pdf"
+                download>download my <abbr title="Curriculum Vitae">CV</abbr></a>.</p>
+                <button type="button" onclick="document.getElementById('hireDialog').close()">Close</button>
+        </dialog>
+
     <nav>
         <a href="#about">About</a> |
         <a href="#skills">Skills</a> |
@@ -96,7 +97,7 @@
         </li>
         <li>Web Development
             <ul type="circle">
-                <li>HTML</li>
+                <li><abbr title="HyperText Markup Language">HTML</abbr></li>
                 <li>CSS (learning)</li>
                 <li>JavaScript (next)</li>
             </ul>
@@ -128,7 +129,7 @@
     </p>
     <h3>My learning roadmap</h3>
     <ol type="1">
-        <li>HTML stucture and content</li>
+        <li><abbr title="HyperText Markup Language">HTML</abbr> stucture and content</li>
         <li>CSS layout and design</li>
         <li>Javascript and the DOM</li>
         <li>Deploy my portfolio online</li>
@@ -178,8 +179,9 @@
     <section id="education"></section>
     <h2>Education</h2>
     <h3>BSc in Software Engineering</h3>
-    <p>Addis Ababa Science and Technology University,
-        <time datetime="2023-09">September 2023</time> - present</p>
+    <p>Addis Ababa Science and Technology University 
+        <abbr title="Addis Ababa Science and Technology University">AASTU</abbr>,
+    <time datetime="2023-09">September 2023</time> - present</p>
         <p>
             <label for="degree">Degree progress:</label>
             <progress id="degree" value="40" max="100">40%</progress> 40%
@@ -249,11 +251,11 @@
     <h2>Contact</h2>
     <p>Address:<br>Addis Ababa,<br>Ethiopia</p>
     <p>Email: <a href="mailto:abigiyayonass@gmail.com">abigiyayonass@gmail.com</a></p>
-    <p>Phone: <a href="tel:+251906139533">+251&nbsp;906&nbsp;139&nbsp;533</a></p>
+    <p>Phone: <a href="tel:+251906139533"> +251&nbsp;906&nbsp;139&nbsp;533 </a></p>
     <p>GitHub: <a href="https://github.com/Abbys-Realm">github.com/Abbys-Realm</a></p>
     <p>LinkedIn: <a
         href="https://www.linkedin.com/in/abigiya-yonas-48a9813b6">linkedin.com/in/abigiya-yonas</a></p>
-    <p><a href="Files/Personal_cv.pdf" download>Download my CV (PDF)</a></p>
+    <p><a href="Files/Personal_cv.pdf" download>Download my <abbr title="Curriculum Vitae">CV</abbr> (PDF)</a></p>
     <h3>Where I study</h3>
     <iframe src="https://maps.app.goo.gl/oq2iuGyuAPdngJhu6" 
     width="600" height="300"
@@ -333,8 +335,8 @@
     <button type="reset">Clear</button>
 </main>
 <footer>
-    <p>&copy; 2026 Abigiya yonas. All rights reserved.</p>
-    <p>Last updated: <time datetime="2026-11-05">5 November 2026</time></p>
+     <p>&copy; 2026 Abigiya yonas. All rights reserved.</p>
+  <p>Last updated: <time datetime="2026-11-05">5 November 2026</time></p>
     </footer>
   </body>
 </html>
