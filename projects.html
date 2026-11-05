@@ -20,26 +20,63 @@
   <body>
     <header>
       <nav>
-        <p><a href="index.html">&lt;- Back to home</a></p>
+        <p><a href="index.html">&larr; Back to home</a></p>
       </nav>
     </header>
     <main>
       <h1>My projects</h1>
       <p>Details of every project i have built.</p>
+      <table border="1" cellpadding="8" cellspacing="0">
+        <caption>
+          Project Summary
+        </caption>
+        <thead>
+          <tr>
+            <th>Project</th>
+            <th>Language</th>
+            <th>Year</th>
+            <th>Link</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Simple Calculator</td>
+            <td>Python</td>
+            <td><time datetime="2024">2024</time></td>
+            <td><a href="#calculator">View Details</a></td>
+          </tr>
+          <tr>
+            <td>Library Management System</td>
+            <td>C++</td>
+            <td><time datetime="2025">2025</time></td>
+            <td><a href="#library">View Details</a></td>
+          </tr>
+          <tr>
+            <td>ToDo App</td>
+            <td>JavaScript(Node.js)</td>
+            <td><time datetime="2026">2026</time></td>
+            <td><a href="#todo">View Details</a></td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <th colspan="3">Total projects</th>
+            <td>3</td>
+          </tr>
+        </tfoot>
+      </table>
       <h2>Projects</h2>
       <article id="simple calculator">
         <h3>Simple Calculator</h3>
+        <img src="img\project-calculator.jpg" alt="Screenshot of the a  library management system"
+          width="400" height="250">
         <p>A calculator that adds, subtracts, multiplies and divides.</p>
         <h3>Watch the demo</h3>
-        <video controls poster=" " width="640" height="360">
+        <video controls poster=img/project-demo-poster.jpg " width="640" height="360">
           <source src="media/project-demo.mp4" type="video/mp4" />
           <source src="media/project-demo.webm" type="video/webm" />
           <track
-            src="media/project-demo.vtt"
-            kind="captions"
-            srclang="en"
-            label="English"
-            default
+            src="media/project-demo.vtt" kind="captions" srclang="en" label="English" default
           />
           Your browser does not support the video tag.
         </video>
@@ -68,14 +105,18 @@
           height="250"
         />
         <p>A console program for borrowing and returning books.</p>
-        <p>How i built library management system</p>
-        <ol type="1">
-          <li>Create input fields for book title and authors</li>
-          <li>Build a table structure to display the book inventory</li>
-          <li>Add submit button to add new books</li>
-          <li>Include a delete control inside the table rows for management</li>
-        </ol>
-        <p>Used technologies</p>
+        <details>
+          <summary>How i built library management system</summary>
+          <ol type="1">
+            <li>Create input fields for book title and authors</li>
+            <li>Build a table structure to display the book inventory</li>
+            <li>Add submit button to add new books</li>
+            <li>
+              Include a delete control inside the table rows for management
+            </li>
+          </ol>
+        </details>
+        <p><strong>Used technologies</strong></p>
         <ul type="circle">
           <li>React</li>
           <li>JavaScript</li>
@@ -83,19 +124,23 @@
           <li>Fetch API</li>
         </ul>
       </article>
-      <article id="todo app">
+      <article id="todo">
         <h3>ToDo App</h3>
         <p>Simple web app that manages your task</p>
-        <p>How i built ToDo App</p>
-        <ol type="1">
-          <li>Set up the project and connected it to a PostgreSQL database</li>
-          <li>Built the backend using Node.js and Express.</li>
-          <li>Created the frontend using React, HTML, and CSS.</li>
-          <li>
-            Connected both sides, tested the features, and improved the design
-          </li>
-        </ol>
-        <p>Used technologies</p>
+        <details>
+          <summary>How i built ToDo App</summary>
+          <ol type="1">
+            <li>
+              Set up the project and connected it to a PostgreSQL database
+            </li>
+            <li>Built the backend using Node.js and Express.</li>
+            <li>Created the frontend using React, HTML, and CSS.</li>
+            <li>
+              Connected both sides, tested the features, and improved the design
+            </li>
+          </ol>
+        </details>
+        <p><strong>Used technologies</strong></p>
         <ul type="circle">
           <li>React</li>
           <li>Node.js</li>
@@ -103,11 +148,14 @@
           <li>CSS</li>
         </ul>
       </article>
-      <p><a href="https://www.w3schools.com/">W3S School</a></p>
-      <p><a href="index.html#contact">Contact</a></p>
+      <p>
+        Useful reference: <a href="https://www.w3schools.com/">W3S School</a>
+      </p>
+      <p><a href="index.html#contact">Contact me</a></p>
     </main>
     <footer>
-      <p> &copy; 2026 Abigiya yonas. All rights reserved.</p>
+      <p>&copy; 2026 Abigiya yonas. All rights reserved.</p>
+      <p>Last updated: <time datetime="2026-11-05">5 November 2026</time></p>
     </footer>
   </body>
 </html>
